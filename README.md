@@ -1,7 +1,11 @@
 Запустите скрипт из папки репозитория:
+
 cd ./backend;  docker build -f Dockerfile .  -t python-server-em:0.1; cd ../nginx/; docker build -f Dockerfile .  -t nginx-em:0.1
+
 он соберет нужные образы
+
 далее запустите docker-compose.yml:
+
 docker-compose -f docker-compose.yml up -d 
 
 Проверка:
