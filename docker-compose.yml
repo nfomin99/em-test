@@ -1,0 +1,13 @@
+services:
+  python-server:
+    image: python-server-em:0.1
+    container_name: python-server-emb
+  nginx-proxy:
+    depends_on:
+      - python-server
+    image: nginx-em:0.1
+    container_name:  nginx-em
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
