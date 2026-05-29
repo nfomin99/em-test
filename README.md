@@ -1,6 +1,6 @@
 Запустите скрипт из папки репозитория:
 
-cd ./backend;  docker build -f Dockerfile .  -t python-server-em:0.1; cd ../nginx/; docker build -f Dockerfile .  -t nginx-em:0.1
+cd ./backend;  docker build -f Dockerfile .  -t python-server-em:0.1; cd ../nginx/; docker build -f Dockerfile .  -t nginx-em:0.1; cd ..
 
 он соберет нужные образы
 
